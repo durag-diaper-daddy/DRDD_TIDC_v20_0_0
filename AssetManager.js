@@ -76,12 +76,12 @@
   //   load      true loads the file anyway even when swap is false
   //   why       plain-English note explaining a swap:false
   var MANIFEST = {
-    playerDRDD:              { file: 'drdd.glb',          height: 2.0, swap:false, load:true, why:'auto-swap off — the player rig system adopts this model itself (adoptPlayerGLB in the game) and drives its animation clips' },
+    playerDRDD:              { file: 'drdd.glb',          height: 2.1, swap:false, load:true, why:'auto-swap off — the player rig system adopts this model itself (adoptPlayerGLB in the game) and drives its animation clips' },
     // V16.6.0: the Frogger player reuses the main DRDD model. Its procedural
     // build already faces +Z like the model, so no rotY is needed.
     characterDRDDFrogTop:    { file: 'drdd.glb',          height: 2.0 },
-    characterDipeGenie:      { file: 'genie.glb',         height: 3.0 },
-    characterMicFlex:        { file: 'micflex.glb',       height: 2.0, rotX:90 },  // V16.5.0: exported lying down
+    characterDipeGenie:      { file: 'genie.glb',         height: 2.9 },
+    characterMicFlex:        { file: 'micflex.glb',       height: 2.2, rotX:90 },  // V16.5.0: exported lying down
     // V16.6.0: swap ENABLED — the ceremony's rage tint now recolours through
     // the model's own material (see _mfSetRage), so the bodyMesh contract no
     // longer needs the procedural build. Shares micflex.glb.
@@ -102,13 +102,13 @@
     // and turns it upright by itself (see autoUpright). Hand-guessing the sign
     // got it wrong twice; if you ever DO want to override the automatic choice,
     // adding rotX here still wins outright.
-    enemyStooge_Moe:         { file: 'stooge_moe.glb',    height: 1.9, wave: 2 },
-    enemyStooge_Larry:       { file: 'stooge_larry.glb',  height: 1.9, wave: 2 },
-    enemyStooge_Curly:       { file: 'stooge_curly.glb',  height: 1.9, wave: 2 },
+    enemyStooge_Moe:         { file: 'stooge_moe.glb',    height: 1.7, wave: 2 },
+    enemyStooge_Larry:       { file: 'stooge_larry.glb',  height: 1.7, wave: 2 },
+    enemyStooge_Curly:       { file: 'stooge_curly.glb',  height: 1.7, wave: 2 },
     // ── V22.3.0 — the three that had no 3D form until now ─────────────────
-    characterChina:          { file: 'china.glb',         height: 1.9, wave: 2 },
-    characterFreakyBlonde:   { file: 'freaky_blonde.glb', height: 1.9, wave: 2 },
-    characterDumbass:        { file: 'dumbass.glb',       height: 1.9, wave: 2 },
+    characterChina:          { file: 'china.glb',         height: 1.8, wave: 2 },
+    characterFreakyBlonde:   { file: 'freaky_blonde.glb', height: 1.8, wave: 2 },
+    characterDumbass:        { file: 'dumbass.glb',       height: 1.8, wave: 2 },
     enemyDuragStooge:        { file: 'stooge_durag.glb',  height: 1.9 },
     enemyOztrich:            { file: 'oztrich.glb',       height: 2.6, rotX:90 },  // V16.5.0: exported lying down
     enemyOztrichChase:       { file: 'oztrich.glb',       height: 2.6, rotX:90, rotY:180 },  // V16.5.0 / V16.6.0
